@@ -1,0 +1,22 @@
+{
+  "name": "vuebiks-cube",
+  "version": "0.1.0",
+  "description": "An experiment with Vue.js and CSS",
+  "author": {
+    "name": "Scott Bedard",
+    "email": "scott@scottbedard.net"
+  },
+  "homepage": "http://scottbedard.net",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottbedard/vuebiks-cube"
+  },
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-util": "^3.0.7"
+  }
+}
