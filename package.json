@@ -1,7 +1,7 @@
 {
-  "name": "vuebiks-cube",
+  "name": "js-cube",
   "version": "0.1.0",
-  "description": "An experiment with Vue.js and CSS",
+  "description": "Manipulates data associated with a Rubik's cube",
   "author": {
     "name": "Scott Bedard",
     "email": "scott@scottbedard.net"
@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/scottbedard/vuebiks-cube"
+    "url": "https://github.com/scottbedard/js-cube"
   },
   "devDependencies": {
     "babel": "^5.8.29",

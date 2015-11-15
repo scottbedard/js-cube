@@ -3,30 +3,6 @@ var band_maps = require('./band_map');
 module.exports = class {
 
     /**
-     * Re-assembles chunked data
-     *
-     * @param   {Array}  data
-     * @param   {String} method
-     * @return  {Array}
-     */
-    unchunk(data, method)
-    {
-        if (method == 'rows') {
-            return data.reduce((a, b) => a.concat(b));
-        }
-
-        let result = [];
-        let size = data.length;
-        for (let i = 0; i < size; i++) {
-            for (let j = 0; j < size; j++) {
-                result.push(data[j][i]);
-            }
-        }
-
-        return result;
-    }
-
-    /**
      * Chunks a face into rows or columns
      *
      * @param  {Array}  data    Array of data to be split
@@ -60,6 +36,30 @@ module.exports = class {
         }
 
         return cols;
+    }
+
+    /**
+     * Re-assembles chunked data
+     *
+     * @param   {Array}  data
+     * @param   {String} method
+     * @return  {Array}
+     */
+    unchunk(data, method)
+    {
+        if (method == 'rows') {
+            return data.reduce((a, b) => a.concat(b));
+        }
+
+        let result = [];
+        let size = data.length;
+        for (let i = 0; i < size; i++) {
+            for (let j = 0; j < size; j++) {
+                result.push(data[j][i]);
+            }
+        }
+
+        return result;
     }
 
     /**
